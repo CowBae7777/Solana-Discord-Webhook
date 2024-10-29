@@ -2,7 +2,7 @@ const axios = require('axios');
 
 // 發送交易數據到 Discord Webhook
 async function sendToDiscord(transactionData) {
-    const discordWebhookUrl = "https://discord.com/api/webhooks/1299308318396780627/DKCrCbSzfnMpeR-3fs3zh8oMvmeHQiXHPq-B7kSCLCMDcfVcrXnA5sK7HcJxk9owAyeY";
+    const discordWebhookUrl = "YOUR_DISCORD_WEBHOOK_URL";
     const message = {
         content: `收到新的交易通知: ${JSON.stringify(transactionData, null, 2)}`
     };
